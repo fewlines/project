@@ -1,0 +1,14 @@
+{
+    "name": "fewlines/project",
+    "type": "library",
+    "description": "Default project for the fewlines framework",
+    "keywords": ["fewlines", "project", "base", "php"],
+    "homepage": "https://github.com/fewlines/project.git",
+    "authors": [
+        {
+            "name": "Davide Perozzi",
+            "homepage": "http://davide-perozzi.de/",
+            "role": "Developer"
+        }
+    ]
+}
