@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <routes>
 	<layout>/view:index/action:index</layout>
-
-	<!-- <any from="/test/{test}/{?test2}" to="YourProject\Controller\View\Test:indexAction"></any> -->
-
-	<any from="/test/participate/" to="YourProject\Controller\View\Test:participate">
-		<get from="/chain/{test}/" to="YourProject\Controller\View\Test:chainAction">
-			<post from="/activate/" to="YourProject\Controller\View\Test:chainAction"></post>
-		</get>
-	</any>
 </routes>

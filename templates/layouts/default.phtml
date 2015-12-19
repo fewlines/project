@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Your first application</title>
+
+		<!-- Include style -->
+		<style><?= file_get_contents($this->resourceHelper('css/application.css')) ?></style>
 	</head>
 	<body>
 		<?= $this->renderView() . "\r\n" ?>

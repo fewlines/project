@@ -2,13 +2,15 @@
 <html>
 	<head>
 		<title>An Error occured</title>
-
 		<!-- Css include -->
-		<link href="<?= $this->baseUrlHelper('etc/asset/fewlines/styles/css/application.css') ?>" rel="stylesheet" type="text/css" />
+		<style><?= file_get_contents($this->resourceHelper('css/application.css')) ?></style>
 	</head>
 	<body class="exception-page">
 		<div id="page">
-			<?php if( ! $this->getEnvironment() || $this->getEnvironment()->isLocal()): ?>
+			<?php if( ! $this->getEnvironment() ||
+				($this->getEnvironment() && $this->getEnvironment()->isLocal()) ||
+				($this->getEnvironment() && ! $this->getEnvironment()->hasTypes())
+			): ?>
 				<?= $this->renderView() ?>
 			<?php else: ?>
 				<div class="non-local-error"><?= $this->translate('layout.exception.meta.non-local-error') ?></div>

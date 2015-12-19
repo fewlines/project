@@ -1,7 +1,6 @@
 <?php
 
 return array(
-	'h1' => 'Default layout',
-	'h2' => 'This is the default index view',
-	'text' => 'Congratulations! You just set up your first application with fewlines'
+	'h1' => 'fewlines framework',
+	'text' => 'YEAH - It\'s working :) <br /> Now you can create your project.'
 );
