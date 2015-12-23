@@ -4,11 +4,13 @@
     "description": "Default project for the fewlines framework",
     "keywords": ["fewlines", "project", "base", "php"],
     "homepage": "https://github.com/fewlines/project.git",
-    "authors": [
+    "authors":
+    [
         {
             "name": "Davide Perozzi",
             "homepage": "http://davide-perozzi.de/",
             "role": "Developer"
         }
-    ]
+    ],
+    "minimum-stability": "beta"
 }
