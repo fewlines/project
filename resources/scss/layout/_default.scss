@@ -1,27 +1,48 @@
+body {
+	background: $violett;
+}
+
 .default-screen {
 	width: 600px;
 	margin: 0 auto;
-	background: $darkGray;
-	font-family: Arial;
-	color: white;
 	position: relative;
 	top: 50%;
-	padding: 30px;
-	border: 20px solid $violett;
 
 	@include box-sizing(border-box);
 	@include translate(0%, -50%);
 
+	.inner-wrapper {
+		background: #f1f1f1;
+		font-family: Arial;
+		color: $darkGray;
+		padding: 30px;
+
+		@include border-radius(10px);
+		@include animation(shake-rotate .4s);
+	}
+
 	h1 {
 		font-size: 26px;
-		color: white;
 		padding-bottom: 20px;
+		color: $violett;
 		margin-bottom: 20px;
-		border-bottom: 1px solid rgba(white, .3);
+		border-bottom: 1px solid $violett;
 	}
 
 	p {
+		display: block;
+		margin-top: 15px;
 		font-size: 16px;
 		line-height: 22px;
+	}
+
+	.command {
+		display: block;
+		padding: 10px;
+		background: black;
+		color: white;
+		font-size: 12px;
+		line-height: 15px;
+		font-family: "Consolas", serif;
 	}
 }

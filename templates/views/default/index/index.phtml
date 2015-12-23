@@ -1,4 +1,24 @@
 <div class="default-screen">
-	<h1><?= $this->translate('view.index.index.h1') ?></h1>
-	<p><?= $this->translate('view.index.index.text') ?></p>
+	<div class="inner-wrapper">
+		<h1><?= $this->translate('view.index.index.h1') ?></h1>
+		<?php if($this->countProjects() > 0): ?>
+			<p><?= $this->translate('view.index.index.project.registered') ?></p>
+			<span class="command">
+				<?= htmlspecialchars($this->translate('view.index.index.project.command')) ?>
+			</span>
+			<p><?= $this->translate('view.index.index.project.example.text') ?></p>
+			<span class="command">
+				<?= htmlspecialchars(sprintf($this->translate('view.index.index.project.example.command'), $this->getFirstProject()->getId())) ?>
+			</span>
+		<?php else: ?>
+			<p><?= $this->translate('view.index.index.text') ?></p>
+			<span class="command">
+				<?= htmlspecialchars($this->translate('view.index.index.command')) ?>
+			</span>
+			<p><?= $this->translate('view.index.index.example.text') ?></p>
+			<span class="command">
+				<?= htmlspecialchars($this->translate('view.index.index.example.command')) ?>
+			</span>
+		<?php endif; ?>
+	</div>
 </div>

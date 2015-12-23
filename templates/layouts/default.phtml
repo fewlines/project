@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Your first application</title>
+		<title><?= $this->translate('layout.default.meta.title') ?></title>
 
 		<!-- Include style -->
-		<style><?= file_get_contents($this->resourceHelper('css/application.css')) ?></style>
+		<style><?= file_get_contents($this->resourceHelper('css/default.css')) ?></style>
 	</head>
 	<body>
 		<?= $this->renderView() . "\r\n" ?>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>An Error occured</title>
+		<title><?= $this->translate('layout.exception.meta.title') ?></title>
 		<!-- Css include -->
-		<style><?= file_get_contents($this->resourceHelper('css/application.css')) ?></style>
+		<style><?= file_get_contents($this->resourceHelper('css/exception.css')) ?></style>
 	</head>
 	<body class="exception-page">
 		<div id="page">
@@ -13,7 +13,9 @@
 			): ?>
 				<?= $this->renderView() ?>
 			<?php else: ?>
-				<div class="non-local-error"><?= $this->translate('layout.exception.meta.non-local-error') ?></div>
+				<div class="non-local-error">
+					<?= $this->translate('layout.exception.meta.non-local-error') ?>
+				</div>
 			<?php endif; ?>
 		</div>
 	</body>

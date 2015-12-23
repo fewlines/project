@@ -1,5 +1,5 @@
 <?php
 
 return array(
-	'title' => 'Your first application'
+	'title' => 'YEAH! - It\'s working'
 );
